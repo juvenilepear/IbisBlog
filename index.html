@@ -2,7 +2,7 @@
 <html>
     <head>
         <link rel="stylesheet" href="style.css">
-        <script type="module" onload="alert('Script loaded')" src="./js/vendor/lottie.js"></script>
+        <script type="module" src="./js/vendor/lottie.js"></script>
     </head>
     <body>
         <div class="sidebar">
@@ -19,6 +19,7 @@
         <div class="topbar">
             <div id="audio-player-container">
                 <!-- <p>Reproductor de audio</p> -->
+                <audio src="./assets/Poison.mp3" preload="metadata" loop></audio>
                 <button id="play-icon"></button>
                 <span id="current-time" class="time">0:00</span>
                 <input type="range" id="seek-slider" max="100" value="0">
