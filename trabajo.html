@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="Content-Security-Policy" content="style-src 'self' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com;">
+        <link rel="stylesheet" href="style.css">
+        <script type="module" src="./js/vendor/lottie.js"></script>
+    </head>
+    <body>
+        <div class="sidebar">
+            <img src="./assets/ibisProfile.jpg" alt="Ibis Owl">
+            <header>BRIAN RAMOS</header>
+            <h1>IBIS</h1>
+            <ul>
+                <li><a href="./index.html">Inicio</a></li>
+                <li><a href="./trabajo.html">Trabajo</a></li>
+                <li><a href="./contacto.html">Contacto</a></li>
+            </ul>
+        </div>
+        <div class="topbar">
+            <div id="audio-player-container">
+                <!-- <p>Reproductor de audio</p> -->
+                <audio src="./assets/Poison.mp3" preload="metadata" loop></audio>
+                <button id="play-icon"></button>
+                <span id="current-time" class="time">0:00</span>
+                <input type="range" id="seek-slider" max="100" value="0">
+                <span id="duration" class="time">0:00</span>
+                <button id="mute-icon"></button>
+                <input type="range" id="volume-slider" max="100" value="100">
+            </div>
+        </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.9.6/lottie.min.js"></script>
+        <div class="contentArea">
+            <h1>Publicado</h1>
+            <ul>
+                <li><a href="">Yasashii Tako</a></li>
+                <li><a href="">It Would Be Fun</a></li>
+                <li><a href="">Let's Stay Like This a Little More</a></li>
+                <li><a href="">Project Go</a></li>
+                <li><a href="">Sorrow</a></li>
+                <li><a href="">Poison (Nekobaric Rage)</a></li>
+                <li><a href="">Virtuoso</a></li>
+                <li><a href="">Gomitas Temporales</a></li>
+                <li><a href="">Miss Everything</a></li>
+                <li><a href="">Who Are You?</a></li>
+            </ul>
+            <h1>Muy Pronto</h1>
+            <ul>
+                <li><a href="">Caress</a></li>
+                <li><a href="">Lynx</a></li>
+                <li><a href="">Now Loading</a></li>
+            </ul>
+        </div>
+    </body>
+</html> 
