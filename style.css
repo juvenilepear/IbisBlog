@@ -1,0 +1,216 @@
+@import url(http://fonts.googleapis.com/css?family=Oswald);
+body {
+    font-family: 'Oswald', sans-serif;
+    background: url(assets/mainBackground.jpg);
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+    height: 100vh;
+}
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+.sidebar{
+    position: fixed;
+    left: 0;
+    width: 250px;
+    height: 100%;
+    background: #2e024b;
+}
+.sidebar img{
+    max-width: 100%;
+    max-height: 100%;
+    padding: 20px 50px;
+    box-sizing: border-box;
+    border-radius: 50%;
+}
+.sidebar header{
+    font-size: 22px;
+    color: white;
+    text-align: center;
+    line-height: 30px;
+    /* background: green; */
+    user-select: none;
+}
+.sidebar h1{
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    line-height: 24px;
+    user-select: none;
+}
+.sidebar ul a{
+    display: block;
+    height: 100%;
+    width: 100%;
+    line-height: 55px;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    box-sizing: border-box;
+    /* border-top: 1px solid rgba(255,255,255,.1);
+    border-bottom: 1px solid black; */
+    /* transition: .4s; */
+}
+/* ul li:hover a{
+    padding-left: 40px;
+} */
+.topbar{
+    position: fixed;
+    left: 250px;
+    top: 0;
+    width: calc(100% - 250px);
+    height: 100%;
+    max-width: 100%;
+    max-height: 75px;
+    background: yellow;
+}
+button{
+    position: relative;
+    border: 0;
+    cursor: pointer;
+    outline: none;
+    width: 40px;
+    height: 40px;
+    margin: 0px 20px;
+    background: rgb(92, 39, 190);
+}
+#audio-player-container{
+    position: relative;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-items: left;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background: rgb(92, 39, 190);
+}
+
+#play-icon{
+    display: table-cell;
+
+}
+#mute-icon{
+    margin-right: 0px;
+}
+path{
+    stroke: rgb(0, 0, 0);
+}
+#current-time{
+    position: relative;
+    margin-right: 0;
+}
+#duration{
+    position: relative;
+}
+
+#seek-slider{
+    position: relative;
+    align-self: stretch;
+}
+#volume-slider{
+    position: relative;
+    align-self: stretch;
+    margin-right: 20px;
+}
+
+/* estilizado de rangos */
+input[type="range"] {
+    position: relative;
+    -webkit-appearance: none;
+    width: 48%;
+    padding: 0;
+    margin: 2px 5px 0px 5px;
+    float: left;
+    outline: none;
+    background: rgb(92, 39, 190);
+  }
+  input[type="range"]::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 3px;
+    cursor: pointer;
+    background: rgb(92, 39, 190);
+  }
+  input[type="range"]::before {
+    position: absolute;
+    content: "";
+    top: 8px;
+    left: 0;
+    width: var(--seek-before-width);
+    height: 3px;
+    background-color: #007db5;
+    cursor: pointer;
+  }
+  input[type="range"]::-webkit-slider-thumb {
+    position: relative;
+    -webkit-appearance: none;
+    box-sizing: content-box;
+    border: 1px solid #007db5;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background-color: rgb(92, 39, 190);
+    cursor: pointer;
+    margin: -7px 0 0 0;
+  }
+  input[type="range"]:active::-webkit-slider-thumb {
+    transform: scale(1.2);
+    background: #007db5;
+  }
+  input[type="range"]::-moz-range-track {
+    width: 100%;
+    height: 3px;
+    cursor: pointer;
+    background: linear-gradient(to right, rgba(0, 125, 181, 0.6) var(--buffered-width), rgba(0, 125, 181, 0.2) var(--buffered-width));
+  }
+  input[type="range"]::-moz-range-progress {
+    background-color: #007db5;
+  }
+  input[type="range"]::-moz-focus-outer {
+    border: 0;
+  }
+  input[type="range"]::-moz-range-thumb {
+    box-sizing: content-box;
+    border: 1px solid #007db5;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background-color: rgb(92, 39, 190);
+    cursor: pointer;
+  }
+  input[type="range"]:active::-moz-range-thumb {
+    transform: scale(1.2);
+    background: #007db5;
+  }
+  input[type="range"]::-ms-track {
+    width: 100%;
+    height: 3px;
+    cursor: pointer;
+    background: transparent;
+    border: solid transparent;
+    color: transparent;
+  }
+  input[type="range"]::-ms-fill-lower {
+    background-color: #007db5;
+  }
+  input[type="range"]::-ms-fill-upper {
+    background: rgb(92, 39, 190);
+  }
+  input[type="range"]::-ms-thumb {
+    box-sizing: content-box;
+    border: 1px solid #007db5;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background-color: rgb(92, 39, 190);
+    cursor: pointer;
+  }
+  input[type="range"]:active::-ms-thumb {
+    transform: scale(1.2);
+    background: #007db5;
+  }
+
